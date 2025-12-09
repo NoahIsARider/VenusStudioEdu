@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  # 属性键值对
+  database.url: mongodb://localhost:27017
+  log.level: INFO
+  
+  # 文件键值对
+  app.properties: |
+    ui.color=blue
+    ui.theme=dark
+    feature.flags=enabled
+  nginx.conf: |
+    server {
+        listen       80;
+        server_name  localhost;
+        
+        location / {
+            root   /usr/share/nginx/html;
+            index  index.html index.htm;
+        }
+    }

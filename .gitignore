@@ -1,0 +1,68 @@
+# 编译输出和二进制文件
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+a.out
+
+# Rust
+RustStudio/target/
+**/*.rs.bk
+Cargo.lock
+
+# Go
+GoStudio/bin/
+GoStudio/pkg/
+*.test
+*.prof
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+ENV/
+
+# Docker
+.env
+
+# IDE 和编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Node.js (如果有前端项目)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 数据库
+*.db
+*.sqlite
+*.sqlite3
+
+# 操作系统
+.DS_Store
+Thumbs.db

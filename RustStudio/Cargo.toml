@@ -1,0 +1,20 @@
+[package]
+name = "rust_studio"
+version = "0.1.0"
+edition = "2021"
+
+# Rust 语法学习项目
+# 作者：RustStudio
+# 描述：全面的 Rust 编程语言学习项目
+
+[dependencies]
+# 目前不需要外部依赖
+# 如需异步功能，取消下面的注释：
+# tokio = { version = "1", features = ["full"] }
+# reqwest = "0.11"
+
+[profile.release]
+# 发布优化配置
+opt-level = 3
+lto = true
+codegen-units = 1

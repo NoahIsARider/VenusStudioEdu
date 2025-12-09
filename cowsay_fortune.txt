@@ -1,0 +1,3 @@
+fortune | cowsay -f daemon
+fortune | cowsay -f elephant-in-snake
+fortune | cowsay -f turkey
