@@ -35,6 +35,50 @@
   - ✅ 错误处理和 Panic
   - ✅ 高级特性（泛型、指针）
 
+#### 📜 [LuaStudio](LuaStudio/)
+**Lua 脚本语言学习项目**
+
+- **核心内容**：7个章节，覆盖 Lua 全部核心特性
+- **学习重点**：table 数据结构、元表、协程
+- **特色**：
+  - ✅ 基础语法（变量、类型、运算符）
+  - ✅ 控制流（if、while、repeat、for）
+  - ✅ 函数（闭包、可变参数、尾调用）
+  - ✅ 表（数组、字典、多维表）
+  - ✅ 元表与面向对象（继承、运算符重载）
+  - ✅ 模块系统（require、package.path）
+  - ✅ 协程（create、yield、resume）
+
+#### 🐪 [PerlStudio](PerlStudio/)
+**Perl 脚本语言学习项目**
+
+- **核心内容**：8个章节，涵盖 Perl 语言精髓
+- **学习重点**：正则表达式、文本处理、引用
+- **特色**：
+  - ✅ 基础语法（三种变量、上下文、运算符）
+  - ✅ 控制流（条件、循环、语句修饰符）
+  - ✅ 函数（子例程、闭包、回调）
+  - ✅ 数据结构（数组、哈希、引用）
+  - ✅ 正则表达式（匹配、捕获、替换）
+  - ✅ 面向对象（bless、继承、多态）
+  - ✅ 模块系统（use、CPAN 生态）
+  - ✅ 高级特性（文件 IO、map/grep）
+
+#### ⚛️ [ErlangStudio](ErlangStudio/)
+**Erlang 函数式并发语言学习项目**
+
+- **核心内容**：8个章节，掌握 Erlang 核心概念
+- **学习重点**：函数式编程、并发模型、容错设计
+- **特色**：
+  - ✅ 基础语法（不可变变量、原子、模式匹配）
+  - ✅ 控制流（if/case、守卫、列表推导）
+  - ✅ 函数（多子句、匿名函数、高阶函数）
+  - ✅ 数据结构（列表、元组、映射、记录）
+  - ✅ 递归（尾递归优化、快速排序）
+  - ✅ 并发编程（spawn、消息传递、监控）
+  - ✅ 错误处理（throw/error/exit、try/catch）
+  - ✅ 高阶与实战（管道、位语法、ETS、OTP 模式）
+
 ### 容器与编排
 
 #### 🐳 [DockerStudio](DockerStudio/)
@@ -127,6 +171,18 @@ cargo run
 # Go 并发编程
 cd GoStudio
 go run main.go
+
+# Lua 脚本语言
+cd LuaStudio
+bash run.sh
+
+# Perl 脚本语言
+cd PerlStudio
+bash run.sh
+
+# Erlang 函数式并发
+cd ErlangStudio
+bash run.sh
 ```
 
 #### 路径 2：容器技术
@@ -191,6 +247,9 @@ bash scripts/setup.sh
 |-----|----------|------|---------|---------|
 | RustStudio | Rust | ⭐⭐⭐⭐ | 2-3周 | 系统编程、高性能应用 |
 | GoStudio | Go | ⭐⭐⭐ | 1-2周 | 微服务、云原生应用 |
+| LuaStudio | Lua | ⭐⭐ | 3-5天 | 脚本扩展、游戏开发 |
+| PerlStudio | Perl | ⭐⭐⭐ | 1周 | 文本处理、系统管理 |
+| ErlangStudio | Erlang | ⭐⭐⭐⭐ | 2周 | 高并发、分布式系统 |
 | DockerStudio | Docker | ⭐⭐ | 3-5天 | 应用容器化 |
 | KubernetesStudio | K8s | ⭐⭐⭐⭐ | 2-3周 | 容器编排、集群管理 |
 | PostgreSQLStudio | PostgreSQL | ⭐⭐⭐ | 1-2周 | 关系型数据存储 |
@@ -209,6 +268,9 @@ bash scripts/setup.sh
 - **PostgreSQLStudio**：大量 SQL 示例
 - **RedisStudio**：Python 实战代码
 - **GoStudio**：完整的 Go 示例
+- **LuaStudio**：可运行的 Lua 示例
+- **PerlStudio**：完整的 Perl 示例
+- **ErlangStudio**：可运行的 escript 并发示例
 - **KubernetesStudio**：丰富的 YAML 配置
 
 ### 🔧 实用工具脚本
@@ -248,6 +310,9 @@ bash scripts/setup.sh
 VenusStudio/
 ├── RustStudio/           # Rust 系统编程（14模块，2853行代码）
 ├── GoStudio/             # Go 语言学习（9章节）
+├── LuaStudio/            # Lua 脚本语言（7章节）
+├── PerlStudio/           # Perl 脚本语言（8章节）
+├── ErlangStudio/         # Erlang 函数式并发（8章节）
 ├── DockerStudio/         # Docker 容器（6章节，3861行）
 ├── KubernetesStudio/     # K8s 编排（11章节）
 ├── PostgreSQLStudio/     # PostgreSQL（17章节）
@@ -262,6 +327,9 @@ VenusStudio/
 ### 编程能力
 - ✅ Rust 系统编程和内存安全
 - ✅ Go 并发编程和接口设计
+- ✅ Lua 脚本扩展和元表机制
+- ✅ Perl 正则表达式和文本处理
+- ✅ Erlang 函数式编程和高并发
 - ✅ 函数式编程和异步编程
 
 ### 容器技术
@@ -285,17 +353,20 @@ VenusStudio/
 |-----|--------|---------|--------|------|
 | RustStudio | 2 | 14 | 14模块 | 2 |
 | GoStudio | 3 | 20+ | 9章节 | 2 |
+| LuaStudio | 1 | 8+ | 7章节 | 1 |
+| PerlStudio | 1 | 10+ | 8章节 | 1 |
+| ErlangStudio | 1 | 9+ | 8章节 | 1 |
 | DockerStudio | 13 | 10+ | 6章节 | 4 |
 | KubernetesStudio | 13 | 15+ | 11章节 | 4 |
 | PostgreSQLStudio | 20+ | 60+ | 17章节 | 3 |
 | RedisStudio | 20+ | 60+ | 16章节 | 3 |
-| **总计** | **70+** | **180+** | **73章节** | **18** |
+| **总计** | **74+** | **190+** | **96章节** | **21** |
 
 ## 🌐 技术生态
 
 ### 云原生技术栈
 ```
-应用层：Rust/Go 应用开发
+应用层：Rust/Go/Lua/Perl/Erlang 应用开发
    ↓
 容器化：Docker 镜像构建
    ↓
@@ -320,6 +391,9 @@ Database (PostgreSQL)
 ### 官方文档
 - [Rust 官方文档](https://www.rust-lang.org/)
 - [Go 官方文档](https://go.dev/)
+- [Lua 官方文档](https://www.lua.org/)
+- [Perl 官方文档](https://www.perl.org/)
+- [Erlang 官方文档](https://www.erlang.org/)
 - [Docker 官方文档](https://docs.docker.com/)
 - [Kubernetes 官方文档](https://kubernetes.io/)
 - [PostgreSQL 官方文档](https://www.postgresql.org/)
@@ -384,6 +458,15 @@ cd RustStudio && cargo run
 
 # Go 语言学习
 cd GoStudio && go run main.go
+
+# Lua 脚本语言
+cd LuaStudio && bash run.sh
+
+# Perl 脚本语言
+cd PerlStudio && bash run.sh
+
+# Erlang 函数式并发
+cd ErlangStudio && bash run.sh
 
 # Docker 容器化
 cd DockerStudio && bash scripts/setup.sh
