@@ -6,7 +6,10 @@
 use strict;
 use warnings;
 use feature 'say';
-use Data::Dumper;
+eval { require Data::Dumper; Data::Dumper->import(); 1; };
+unless (defined &Dumper) {
+    *Dumper = sub { my $v = shift; return ref($v) eq 'HASH' ? join(", ", map { "$_ => $v->{$_}" } keys %$v) : (ref($v) eq 'ARRAY' ? "@$v" : $v); };
+}
 
 sub demo_data_structures {
     say "\n=== 1. 数组（Array） ===";

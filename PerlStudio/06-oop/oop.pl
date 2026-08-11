@@ -6,7 +6,10 @@
 use strict;
 use warnings;
 use feature 'say';
-use Data::Dumper;
+eval { require Data::Dumper; Data::Dumper->import(); 1; };
+unless (defined &Dumper) {
+    *Dumper = sub { my $v = shift; return ref($v) eq 'HASH' ? join(", ", map { "$_ => $v->{$_}" } keys %$v) : (ref($v) eq 'ARRAY' ? "@$v" : $v); };
+}
 
 # === 定义一个类 ===
 # Perl 的类就是一个包（package），对象是 bless 的引用

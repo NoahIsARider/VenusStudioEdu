@@ -6,7 +6,8 @@
 use strict;
 use warnings;
 use feature 'say';
-use experimental 'signatures';   # 启用命名参数签名（Perl 5.36+ 已稳定）
+use feature 'signatures';
+no warnings 'experimental::signatures';
 use feature 'state';             # 启用静态局部变量
 
 # 传统方式：使用 @_ 访问参数
